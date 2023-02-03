@@ -25,6 +25,7 @@ public static class MetodosGenerales
     public static string COMANDO_RATATOUILLE = "!ratatouille";
     public static string COMANDO_MOSTRO = "!mostro";
     public static string COMANDO_BACKTOWORK = "!backtowork";
+    public static string COMANDO_PATRISIO = "!patrisio";
     //public static string COMANDO_ = "!";
     //public static string COMANDO_ = "!";
     //public static string COMANDO_ = "!";
@@ -32,7 +33,7 @@ public static class MetodosGenerales
     //public static string COMANDO_ = "!";
 
 
-	public static IEnumerable<ITweet> filtrarTweets(List<ITweet> tweets)
+    public static IEnumerable<ITweet> filtrarTweets(List<ITweet> tweets)
 	{
 		IEnumerable<ITweet> tweetsFiltrados;
 		tweetsFiltrados = tweets.Where(tweetUnico =>
@@ -62,7 +63,8 @@ public static class MetodosGenerales
                     tweetUnico.FullText.Contains(COMANDO_MOSTRO)
                     ||
                     tweetUnico.FullText.Contains(COMANDO_BACKTOWORK)
-
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_PATRISIO)
                   )
         );
 

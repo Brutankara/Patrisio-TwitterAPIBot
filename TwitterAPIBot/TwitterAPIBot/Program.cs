@@ -83,6 +83,10 @@ foreach (var Filteredtweet in filterTweets)
             case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_BACKTOWORK):
                 MetodosGenerales.mandarTweetImagen(cliente, tweet, "backtowork.jpeg");
                 break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_PATRISIO):
+                MetodosGenerales.mandarTweetImagen(cliente, tweet, "patrisiodead.png");
+                break;
+
         }
     }
 
