@@ -16,7 +16,7 @@ var parametros = new SearchTweetsParameters("prueba")
 {
     SearchType = SearchResultType.Recent,
     Since = DateTime.Today.AddDays(-3),
-    Query = ""
+    Query = "@RealBrutankara"
 };
 
 if (tweetsIDs != null && tweetsIDs.Any())
@@ -86,13 +86,33 @@ foreach (var Filteredtweet in filterTweets)
             case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_PATRISIO):
                 MetodosGenerales.mandarTweetImagen(cliente, tweet, "patrisiodead.png");
                 break;
-
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_TACOS):
+                MetodosGenerales.mandarTweetVideo(cliente, tweet, "videoTacos");
+                break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_QUASO):
+                MetodosGenerales.mandarTweetVideo(cliente, tweet, "videoQuaso");
+                break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_LFMAO):
+                MetodosGenerales.mandarTweetVideo(cliente, tweet, "videoEva");
+                break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_PLAGA):
+                MetodosGenerales.mandarTweetVideo(cliente, tweet, "videoPlaga");
+                break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_ALBONDIGAS):
+                MetodosGenerales.mandarTweetImagen(cliente, tweet, "albondigasana.jpg");
+                break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_JUEVES):
+                MetodosGenerales.mandarTweetImagen(cliente, tweet, "felisjueves.jpg");
+                break;
+            case var s when tweet.FullText.Contains(MetodosGenerales.COMANDO_CHESS):
+                MetodosGenerales.mandarTweetVideo(cliente, tweet, "videoChess");
+                break;
         }
     }
 
 }
 
 
-System.Threading.Thread.Sleep(10000);
+System.Threading.Thread.Sleep(40000);
 
 

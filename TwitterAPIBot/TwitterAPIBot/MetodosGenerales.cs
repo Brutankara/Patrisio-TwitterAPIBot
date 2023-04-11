@@ -26,6 +26,13 @@ public static class MetodosGenerales
     public static string COMANDO_MOSTRO = "!mostro";
     public static string COMANDO_BACKTOWORK = "!backtowork";
     public static string COMANDO_PATRISIO = "!patrisio";
+    public static string COMANDO_TACOS = "!tacosandsushi";
+    public static string COMANDO_QUASO = "!croissant";
+    public static string COMANDO_LFMAO = "!eva";
+    public static string COMANDO_PLAGA = "!plaga";
+    public static string COMANDO_ALBONDIGAS = "!albondigasana";
+    public static string COMANDO_JUEVES = "!felisjueves";
+    public static string COMANDO_CHESS = "!chess";
     //public static string COMANDO_ = "!";
     //public static string COMANDO_ = "!";
     //public static string COMANDO_ = "!";
@@ -65,8 +72,22 @@ public static class MetodosGenerales
                     tweetUnico.FullText.Contains(COMANDO_BACKTOWORK)
                     ||
                     tweetUnico.FullText.Contains(COMANDO_PATRISIO)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_TACOS)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_QUASO)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_LFMAO)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_PLAGA)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_ALBONDIGAS)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_JUEVES)
+                    ||
+                    tweetUnico.FullText.Contains(COMANDO_CHESS)
                   )
-        );
+        ); 
 
 
         return tweetsFiltrados;
